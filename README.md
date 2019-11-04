@@ -15,4 +15,7 @@ aws-ec2-example
 
 ## How to use
 
-2. Inside the directory of project, use: `terraform plan`, if everything looks like ok, apply: `terraform apply`
+1. Inside the directory of project, use: `terraform plan`, if everything looks like ok, apply: `terraform apply`
+
+
+## Examples
