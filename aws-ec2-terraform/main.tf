@@ -31,13 +31,7 @@ resource "aws_instance" "webserver-terraform"{
     ami = "${var.ami_image}"
     instance_type = "${var.instance_type}"
     vpc_security_group_ids = [aws_security_group.instance.id]
-    
-    #user_data = <<-EOF
-    #          #!/bin/bash
-    #          echo "Hello, World" > index.html
-    #          nohup busybox httpd -f -p 8080 &
-    #         EOF
-    
+   
     tags = {
         Name = "webserver"
         Creator = "Terraform"
