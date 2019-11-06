@@ -1,4 +1,4 @@
-# Configuração de recursos na AWS com Terraform usando Gitlab CI
+# Configuração de recursos na AWS com Terraform + Gitlab CI
 Projeto com exemplos de configuração de recursos na AWS usando Terraform + Gitlab CI.
 
 O pipeline configurado no Gitlab CI executa 3 jobs:
