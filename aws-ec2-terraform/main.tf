@@ -1,7 +1,7 @@
 provider "aws"{
-    region = "${var.aws_region}"
-    access_key =  "${var.access_key}"
-    secret_key =  "${var.secret_key}"
+    region = var.aws_region
+    access_key =  var.access_key
+    secret_key =  var.secret_key
 }
 
 ### Security Group
@@ -28,8 +28,8 @@ resource "aws_security_group" "instance" {
 
 ## EC2
 resource "aws_instance" "webserver-terraform"{
-    ami = "${var.ami_image}"
-    instance_type = "${var.instance_type}"
+    ami = var.ami_image
+    instance_type = var.instance_type
     vpc_security_group_ids = [aws_security_group.instance.id]
    
     tags = {
